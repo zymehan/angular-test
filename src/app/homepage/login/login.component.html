@@ -1,0 +1,37 @@
+<ng-container>
+  <sdate-spinner *ngIf="isLoading"></sdate-spinner>
+  <form [formGroup]="loginForm" (ngSubmit)="onLoginClicked()">
+    <div class="max-width-350">
+      <div class="d-flex justify-content-start mb-10">
+        <a class="close" mat-dialog-close=""><span class="material-icons">close</span></a>
+      </div>
+      <div mat-dialog-content>
+        <div class="d-sm-flex">
+          <a class="btn w-100 height-30 d-flex align-items-center bg-info p-0 mb-1 mr-1" (click)="loginWithGoogle()"><span class="bg-transparent"><sdate-icon
+            [width]="30" icon="google" color="white"></sdate-icon></span><p class="text-white m-0 p-0 w-75 text-center">Google</p>
+          </a>
+          <a class="btn w-100 height-30 d-flex align-items-center bg-info p-0 mb-1"><span class="bg-transparent px-1"><sdate-icon
+            [width]="20" icon="face" color="white"></sdate-icon></span><p class="text-white m-0 p-0 w-75 text-center">Facebook</p>
+          </a>
+        </div>
+        <div class="d-flex align-items-center my-15">
+          <div class="col col-sm-5 border-dark border-bottom"></div>
+          <div class="col col-sm-2 d-flex justify-content-center align-items-center"><span>or</span></div>
+          <div class="col col-sm-5 border-dark border-bottom"></div>
+        </div>
+        <div class="mb-30">
+          <label for="email" class="mb-1 text-black-50">Email Address</label>
+          <input class="w-100 height-35 border-dark border-1 px-5" id="email" formControlName="email"
+                 placeholder="Your email address"/>
+          <label for="password" class="mt-10 mb-1 text-black-50">Password</label>
+          <input class="w-100 height-35 border-dark border-1 px-5" id="password" formControlName="password"
+                 placeholder="Your password" type="password"/>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between align-items-center mb-10" mat-dialog-actions>
+        <span class="text-primary">Forgot Password?</span>
+        <button class="btn btn-light rounded-0" type="submit" [disabled]="loginForm.invalid || isLoading">Login</button>
+      </div>
+    </div>
+  </form>
+</ng-container>

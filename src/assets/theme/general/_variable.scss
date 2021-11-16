@@ -1,0 +1,62 @@
+// Colors
+$prussian-blue: #003366;
+$niagara: #07A39D;
+$tundora: #414141;
+$cerise: #E1266B;
+$denim: #0099e4;
+$rock-blue: #8DA3BA;
+$zircon: #DDDFE3;
+$solitude: #F2F3F5;
+$bubbly-blueberry: #5352ED;
+$jaffa: #F2994A;
+$cream-can: #F2C94C;
+$medium-purple: #9B51E0;
+$jungle-green: #27AE60;
+$mine-shaft: #333333;
+$gray-6: #F2F2F2;
+$Cabaret: #D05068;
+$Merlot: #76303c;
+$Suva-Grey: #888;
+
+// Theme colors
+$theme-colors: (
+  primary: $Cabaret,
+  danger: $Merlot,
+  gary: $mine-shaft,
+  //secondary:  $secondary,
+  success:    $niagara,
+  info:       $denim,
+  //warning:    $warning,
+  //danger:     $danger,
+  light:      $jungle-green,
+  dark:       $gray-6,
+);
+
+// Headings
+$font-size-base: 1rem;
+$font-size-lg: $font-size-base * 1;
+$font-size-sm: $font-size-base * .955;
+
+$h1-font-size: $font-size-base * 3;
+$h2-font-size: $font-size-base * 2.5;
+$h3-font-size: $font-size-base * 1.5;
+$h4-font-size: $font-size-base * 1.125;
+$headings-font-weight: 500;
+$font-weight-bolder: 700;
+
+// Spacing
+$pixel-spacer: 5px !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+@for $i from 1 through 100 {
+  $spacers: map-merge($spacers, (
+    $i * 5: ($i * $pixel-spacer)
+  ));
+}
+
+// Buttons + Forms
+
+$btn-padding-y: 0.5rem;
+$btn-padding-x: 1rem;
+$btn-border-radius: 3px;
+$btn-font-size: 12px;
+$btn-font-weight: 500;

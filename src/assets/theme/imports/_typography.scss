@@ -1,0 +1,46 @@
+div, p, a, span {
+  font-size: 14px;
+}
+
+a {
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0 !important;
+}
+
+@for $i from 5 through 90 {
+  .font-#{$i} {
+    font-size: #{$i}px !important;
+  }
+}
+
+@for $i from 1 through 20 {
+  .multi-line-text-overflow-#{$i} {
+    display: -webkit-box;
+    -webkit-line-clamp: #{$i};
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.text-overflow {
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+//@media (min-width: 576px) { //sm
+//}
+//
+//@media (min-width: 768px) { //md
+//}
+//
+//@media (min-width: 992px) { //lg
+//}
+//
+//@media (min-width: 1200px) { //xl
+//}
