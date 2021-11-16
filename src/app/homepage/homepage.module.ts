@@ -15,7 +15,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { HomepageRoutingModule } from './homepage-routing.module';
 import { HomepageComponent } from './homepage.component';
 import { LogoComponent } from './header/logo.component';
-import { HfooterComponent } from './footer/hfooter.component';
+import { HfooterComponent } from './carPerformance/hfooter.component';
 import { CarDetailComponent } from './carDetail/carDetail.component';
 import { IconModule } from '../ui-kit/icon/icon.module';
 import { PipesModule } from '../ui-kit/pipes/pipes.module';
