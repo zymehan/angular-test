@@ -15,7 +15,8 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { HomepageRoutingModule } from './homepage-routing.module';
 import { HomepageComponent } from './homepage.component';
 import { LogoComponent } from './logo/logo.component';
-import { HfooterComponent } from './hfooter/hfooter.component';
+import { HfooterComponent } from './footer/hfooter.component';
+import { CarDetailComponent } from './carDetail/carDetail.component';
 import { IconModule } from '../ui-kit/icon/icon.module';
 import { PipesModule } from '../ui-kit/pipes/pipes.module';
 import { LoginComponent } from './login/login.component';
@@ -25,7 +26,7 @@ import { NgImageSliderModule } from 'ng-image-slider';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 
 @NgModule({
-  declarations: [HomepageComponent, LogoComponent, HfooterComponent, LoginComponent, RegistrationComponent],
+  declarations: [HomepageComponent, LogoComponent, HfooterComponent,CarDetailComponent, LoginComponent, RegistrationComponent],
   imports: [
     NgImageSliderModule,
     IvyCarouselModule,

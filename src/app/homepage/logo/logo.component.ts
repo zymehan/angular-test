@@ -6,7 +6,7 @@ import { LoginComponent } from '../login/login.component';
 import { RegistrationComponent } from '../registration/registration.component';
 
 @Component({
-  selector: 'sdate-logo',
+  selector: 'angular-logo',
   templateUrl: './logo.component.html',
   styleUrls: ['./logo.component.scss']
 })

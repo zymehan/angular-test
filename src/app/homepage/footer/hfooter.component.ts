@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'sdate-hfooter',
+  selector: 'angular-hfooter',
   templateUrl: './hfooter.component.html',
   styleUrls: ['./hfooter.component.scss']
 })
