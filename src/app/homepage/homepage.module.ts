@@ -14,19 +14,17 @@ import { MatNativeDateModule } from '@angular/material/core';
 
 import { HomepageRoutingModule } from './homepage-routing.module';
 import { HomepageComponent } from './homepage.component';
-import { LogoComponent } from './logo/logo.component';
+import { LogoComponent } from './header/logo.component';
 import { HfooterComponent } from './footer/hfooter.component';
 import { CarDetailComponent } from './carDetail/carDetail.component';
 import { IconModule } from '../ui-kit/icon/icon.module';
 import { PipesModule } from '../ui-kit/pipes/pipes.module';
-import { LoginComponent } from './login/login.component';
 import { CommonUiKitModule } from '../ui-kit/common-ui-kit/common-ui-kit.module';
-import { RegistrationComponent } from './registration/registration.component';
 import { NgImageSliderModule } from 'ng-image-slider';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 
 @NgModule({
-  declarations: [HomepageComponent, LogoComponent, HfooterComponent,CarDetailComponent, LoginComponent, RegistrationComponent],
+  declarations: [HomepageComponent, LogoComponent, HfooterComponent,CarDetailComponent],
   imports: [
     NgImageSliderModule,
     IvyCarouselModule,
